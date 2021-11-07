@@ -139,10 +139,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="bool_type.cpp" />
+    <ClCompile Include="bool_type2.cpp" />
     <ClCompile Include="char_type.cpp" />
+    <ClCompile Include="cin_ex1.cpp" />
+    <ClCompile Include="constant.cpp" />
     <ClCompile Include="hello.cpp" />
     <ClCompile Include="myinfo.cpp" />
+    <ClCompile Include="sale_point.cpp" />
     <ClCompile Include="sizeof_type.cpp" />
+    <ClCompile Include="speed_convert.cpp" />
     <ClCompile Include="string_type.cpp" />
     <ClCompile Include="var.cpp" />
   </ItemGroup>

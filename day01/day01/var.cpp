@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 using namespace std; //소속(분류)
 
 int main() {
@@ -16,4 +16,4 @@ int main() {
 		schoolClass << "반입니다." << endl;
 
 	return 0;
-}
+}*/
