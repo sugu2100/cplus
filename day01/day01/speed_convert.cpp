@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 using namespace std; //소속(분류)
 #define RATE_KPH_MPH 1.609344  //매크로 상수
 
@@ -17,4 +17,4 @@ int main() {
     cout << "공의 속도는 " << mph << "[MPH]입니다." << endl;
 
     return 0;
-}
+}*/

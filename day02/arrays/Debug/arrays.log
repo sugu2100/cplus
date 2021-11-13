@@ -1,0 +1,3 @@
+﻿  find_max.cpp
+C:\devC++\day02\arrays\find_max.cpp(20,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  arrays.vcxproj -> C:\devC++\day02\Debug\arrays.exe

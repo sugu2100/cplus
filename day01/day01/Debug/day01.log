@@ -1,3 +1,2 @@
-﻿  sale_point.cpp
-C:\devC++\day01\day01\sale_point.cpp(16,19): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+﻿  speed_convert.cpp
   day01.vcxproj -> C:\devC++\day01\Debug\day01.exe
