@@ -15,13 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="score.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="bank_account.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="bank_main.cpp">
+    <ClCompile Include="shape_main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -33,6 +27,12 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="bank_account.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="person.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="shape.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

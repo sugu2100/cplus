@@ -139,14 +139,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="bank_account.cpp" />
-    <ClCompile Include="bank_main.cpp" />
-    <ClCompile Include="score.cpp" />
+    <ClCompile Include="shape_main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="bank_account.h" />
     <ClInclude Include="dog.h" />
+    <ClInclude Include="person.h" />
     <ClInclude Include="score.h" />
+    <ClInclude Include="shape.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

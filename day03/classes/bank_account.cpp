@@ -1,5 +1,15 @@
 #include "bank_account.h"
 
+BankAccount::BankAccount() {};
+
+BankAccount::BankAccount(string a, string own, int bal) {
+	ano = a;
+	owner = own;
+	balance = bal;
+}
+
+BankAccount::~BankAccount() {}
+
 void BankAccount::setAno(string a) {
 	ano = a;
 }
