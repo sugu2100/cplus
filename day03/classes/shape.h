@@ -7,7 +7,6 @@ struct Point { //struct는 기본 public임
 	Point(int _x = 0, int _y = 0) {
 		x = _x;
 		y = _y;
-		//cout << "점(" << x << ', ' << y << ")생성자\n";
 		cout << "점(" << x << ", " << y << ")생성자" << endl;
 	}
 };
@@ -17,10 +16,7 @@ class Circle {
 	int radius;
 
 public:
-	Circle(int cx = 0, int cy = 0, int r = 0) {
-		center.x = cx;
-		center.y = cy;
-		radius = r;
+	Circle(int cx = 0, int cy = 0, int r = 0) : center(cx, cy), radius(r) {
 		cout << "원(반지름 = " << radius << ")생성자\n";
 	}
 };
