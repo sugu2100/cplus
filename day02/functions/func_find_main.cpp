@@ -1,4 +1,4 @@
-#include "config.h"
+/*#include "config.h"
 
 int main() {
 
@@ -13,4 +13,4 @@ int main() {
     cout << "max char = " << maxChar << endl;
 
     return 0;
-}
+}*/

@@ -142,7 +142,7 @@
     <ClCompile Include="for1.cpp" />
     <ClCompile Include="for2.cpp" />
     <ClCompile Include="forfor1.cpp" />
-    <ClCompile Include="forfor2.cpp" />
+    <ClCompile Include="getSeat.cpp" />
     <ClCompile Include="input_gugudan.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

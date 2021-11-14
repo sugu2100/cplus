@@ -24,10 +24,10 @@
     <ClCompile Include="forfor1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="forfor2.cpp">
+    <ClCompile Include="input_gugudan.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="input_gugudan.cpp">
+    <ClCompile Include="getSeat.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
