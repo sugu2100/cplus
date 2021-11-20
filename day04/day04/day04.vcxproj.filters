@@ -18,6 +18,12 @@
     <ClInclude Include="employee.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="transport.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="person.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="employee_main.cpp">
@@ -27,6 +33,12 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="employee_arr_main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="transport.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="taketrans.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

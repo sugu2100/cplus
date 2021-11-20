@@ -1,4 +1,4 @@
-#include "employee.h"
+/*#include "employee.h"
 
 int main() {
 	//int num[] = { 1, 2, 3, 4 };
@@ -16,4 +16,4 @@ int main() {
 	}
 
 	return 0;
-}
+}*/
