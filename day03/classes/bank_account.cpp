@@ -1,33 +1,29 @@
 #include "bank_account.h"
 
-BankAccount::BankAccount() {};
-
-BankAccount::BankAccount(string a, string own, int bal) {
-	ano = a;
-	owner = own;
-	balance = bal;
+BankAccount::BankAccount(string ano, string owner, int balance) {
+	this->ano = ano;
+	this->owner = owner;
+	this->balance = balance;
 }
 
-BankAccount::~BankAccount() {}
-
-void BankAccount::setAno(string a) {
-	ano = a;
+void BankAccount::setAno(string ano) {
+	this->ano = ano;
 }
 
 string BankAccount::getAno() {
 	return ano;
 }
 
-void BankAccount::setOwner(string own) {
-	owner = own;
+void BankAccount::setOwner(string owner) {
+	this->owner = owner;
 }
 
 string BankAccount::getOwner() {
 	return owner;
 }
 
-void BankAccount::setBalance(int bal) {
-	balance = bal;
+void BankAccount::setBalance(int balance) {
+	this->balance = balance;
 }
 
 int BankAccount::getBalance() {

@@ -1,24 +1,21 @@
 #include <iostream>
-#include <cstring>
+#include <string>
 using namespace std;
 
-struct Student {
-    char name[20];
+struct Student {  //멤버는 기본 public
+    string name;
     int grade;
-    char phone[20];
+    string phone;
 };
 
 int main() {
     //자료 생성 및 저장
-    struct Student s1;   //s1 -> 구조체의 변수
-    strcpy_s(s1.name, 20, "이우주");
-    s1.grade = 1;
-    strcpy_s(s1.phone, sizeof(s1.phone), "010-1234-5678");
-
-    struct Student s2 = {"박화성", 2, "010-3333-5555"};
+    Student s1 = Student();   //s1 -> 구조체의 변수
+    s1.name = "김하나";
+    s1.grade = 3;
 
     //객체 배열로 생성
-    struct Student s[3] = {
+    Student s[3] = {
         {"박수성", 2, "010-2222-5555"},
         {"박금성", 1, "010-4444-5555"},
         {"박목성", 3, "010-6666-5555"}
@@ -26,7 +23,6 @@ int main() {
 
     //자료 출력
     cout << s1.name << " 학생은 " << s1.grade << "학년입니다." << endl;
-    cout << s2.name << " 학생은 " << s2.grade << "학년입니다." << endl;
 
     for (int i = 0; i < 3; i++) {
         cout << s[i].name << " 학생은 "

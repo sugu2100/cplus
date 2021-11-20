@@ -1,4 +1,4 @@
-#include "shape.h"
+/*#include "shape.h"
 
 int main() {
 
@@ -9,4 +9,4 @@ int main() {
 	Circle c = Circle(3, 4, 5);
 
 	return 0;
-}
+}*/

@@ -7,9 +7,7 @@ class BankAccount{
 	int balance;   //잔고
 
 public:
-	BankAccount();  //main에서 사용했으므로 명시해야함
-	BankAccount(string a, string own, int bal);
-	~BankAccount();  //소멸자
+	BankAccount(string ano, string owner, int balance); //생성자
 
 	void setAno(string ano);
 	string getAno();
