@@ -5,6 +5,7 @@
 
 Student studentArr[STUDENT_MAX] = {};  //배열 객체
 int stdCount = 0;   //배열의 인덱스 번호
+int stdNumber = 1;
 char searchName[NAME_SIZE];
 
 void insert() {
@@ -29,6 +30,10 @@ void insert() {
 	cout << "수학 : ";
 	cin >> studentArr[stdCount].math;
 
+	//학번
+	studentArr[stdCount].number = stdNumber;
+	stdNumber++;
+
 	//총점 계산
 	studentArr[stdCount].total = studentArr[stdCount].kor +
 		studentArr[stdCount].eng + studentArr[stdCount].math;
@@ -43,6 +48,7 @@ void insert() {
 void listAll() {
 	cout << "========== 학생 목록 ==========" << endl;
 	for (int i = 0; i < stdCount; i++) {
+		cout << "학번 : " << studentArr[i].number << endl;
 		cout << "이름 : " << studentArr[i].name << endl;
 		cout << "주소 : " << studentArr[i].address << endl;
 		cout << "전화번호 : " << studentArr[i].phone << endl;
@@ -64,6 +70,7 @@ void select() {
 	for (int i = 0; i < stdCount; i++) {
 		if (strcmp(studentArr[i].name, searchName) == 0) {
 			//저장된 이름과 검색한 이름이 같으면
+			cout << "학번 : " << studentArr[i].number << endl;
 			cout << "이름 : " << studentArr[i].name << endl;
 			cout << "주소 : " << studentArr[i].address << endl;
 			cout << "전화번호 : " << studentArr[i].phone << endl;
@@ -75,4 +82,23 @@ void select() {
 			break;  //주의! 1명이 일치되면 빠져나옴
 		}
 	}
+}
+
+void remove() {
+	cout << "========== 학생 삭제 ==========" << endl;
+	cin.ignore(1024, '\n');
+	cout << "검색할 이름을 입력하세요: ";
+	cin.getline(searchName, NAME_SIZE);
+
+	for (int i = 0; i < stdCount; i++) {
+		if (strcmp(studentArr[i].name, searchName) == 0) {
+			for (int j = i; j < stdCount - 1; j++) {
+				studentArr[i] = studentArr[i + 1];
+			}
+			stdCount--; //주의! 삭제 후 인덱스 번호를 1 감소 시킴
+			cout << "학생 정보를 삭제했습니다." << endl;
+			break;
+		}
+	}
+
 }

@@ -3,9 +3,9 @@
 void insert();
 void listAll();
 void select();
+void remove();
 int main() {
-	bool sw = true;
-	while (sw) {
+	while (true) {
 		system("cls");
 		//메뉴 출력
 		cout << "1.학생 등록" << endl;
@@ -25,6 +25,8 @@ int main() {
 			cin.ignore(1024, '\n');
 		}
 
+		if (menu == MENU_EXIT) break;   //5번 종료
+
 		switch (menu) {
 		case MENU_INSERT:
 			insert();
@@ -36,11 +38,7 @@ int main() {
 			select();
 			break;
 		case MENU_DELETE:
-			cout << "학생 삭제" << endl;
-			break;
-		case MENU_EXIT:
-			cout << "종료" << endl;
-			sw = false;
+			remove();
 			break;
 		default:
 			cout << "메뉴를 잘못 눌렀습니다." << endl;
